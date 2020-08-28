@@ -12,12 +12,12 @@ export default new Router({
     {
       path: '/index',
       name: 'HelloWorld',
-      component: ()=>import('@/components/HelloWorld')
+      component: ()=>import(/* webpackChunkName: "homepage" */'@/components/HelloWorld')
     },
     {
       path: '*',
-      name: 'HelloWorld',
-      component: ()=>import('@/components/NotFound')
+      name: 'NotFound',
+      component: ()=>import(/* webpackChunkName: "404page" */'@/components/NotFound')
     }
   ]
 })
