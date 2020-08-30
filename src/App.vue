@@ -110,6 +110,9 @@ body{
   bottom: 0px;
   z-index: 1;
 }
+#nprogress .bar {
+  background: white !important;
+}
 </style>
 
 <style scoped>
