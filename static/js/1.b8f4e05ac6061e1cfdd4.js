@@ -1,0 +1,2 @@
+webpackJsonp([1],{YcJa:function(e,n,t){"use strict";Object.defineProperty(n,"__esModule",{value:!0});var u={render:function(){var e=this.$createElement;return(this._self._c||e)("div")},staticRenderFns:[]};var r=t("VU/8")({name:"NotFound",mounted:function(){for(var e=[],n=0;n<6;n++)e.push("404");this.$emit("changeCubeTextures",e)}},u,!1,function(e){t("bOJk")},null,null);n.default=r.exports},bOJk:function(e,n){}});
+//# sourceMappingURL=1.b8f4e05ac6061e1cfdd4.js.map
