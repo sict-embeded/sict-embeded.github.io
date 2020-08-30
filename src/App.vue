@@ -3,7 +3,7 @@
     <div class="nav">
       <div class="title">山商嵌入式</div>
       <ul>
-        <router-link tag="li" tabindex="1" v-for="(item,index) in nav" :key="index" :to="item.to" active-class="active">{{item.title}}</router-link>
+        <router-link tag="li" tabindex="1" v-for="(item,index) in nav" :key="index" :to="item.to" active-class="active" @keypress.enter.native="$event.target.click()">{{item.title}}</router-link>
       </ul>
       <div></div>
     </div>
@@ -76,6 +76,9 @@ export default {
     },
     changeCubeTextures(array){
       this.background=array;
+    },
+    navPress(){
+      console.log(arguments)
     }
   },
   mounted(){
